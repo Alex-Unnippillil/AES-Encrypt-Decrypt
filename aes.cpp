@@ -10,7 +10,7 @@
 using namespace CryptoPP;
 
 std::string encryptAES(const std::string& message, const std::string& key) {
-    byte iv[AES::BLOCKSIZE] = { 0 }; // Initialization vector
+    byte iv[AES::BLOCKSIZE] = { 0 }; // Initiate vector
     byte encryptedMessage[AES::BLOCKSIZE];
 
     // Encryptor
